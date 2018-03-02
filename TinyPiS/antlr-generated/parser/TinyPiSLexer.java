@@ -18,7 +18,7 @@ public class TinyPiSLexer extends Lexer {
 		new PredictionContextCache();
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
-		T__9=10, T__10=11, OROP=12, ANDOP=13, ADDOP=14, SUBOP=15, MULOP=16, UNARYOP=17, 
+		T__9=10, T__10=11, OROP=12, ANDOP=13, ADDOP=14, MINOP=15, MULOP=16, NOROP=17, 
 		IDENTIFIER=18, VALUE=19, WS=20;
 	public static String[] modeNames = {
 		"DEFAULT_MODE"
@@ -26,7 +26,7 @@ public class TinyPiSLexer extends Lexer {
 
 	public static final String[] ruleNames = {
 		"T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", "T__7", "T__8", 
-		"T__9", "T__10", "OROP", "ANDOP", "ADDOP", "SUBOP", "MULOP", "UNARYOP", 
+		"T__9", "T__10", "OROP", "ANDOP", "ADDOP", "MINOP", "MULOP", "NOROP", 
 		"IDENTIFIER", "VALUE", "WS"
 	};
 
@@ -36,7 +36,7 @@ public class TinyPiSLexer extends Lexer {
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, null, null, null, null, null, null, null, null, null, null, null, 
-		"OROP", "ANDOP", "ADDOP", "SUBOP", "MULOP", "UNARYOP", "IDENTIFIER", "VALUE", 
+		"OROP", "ANDOP", "ADDOP", "MINOP", "MULOP", "NOROP", "IDENTIFIER", "VALUE", 
 		"WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);

@@ -48,7 +48,7 @@ MULOP: '*'|'/';
 NOROP: '~';
 
 IDENTIFIER: [_a-zA-Z][_a-zA-Z0-9]*;
-VALUE: [1-9][0-9]*;
+VALUE: [0-9]|[1-9][0-9]+;
 WS: [ \t\r\n] -> skip;
 
 

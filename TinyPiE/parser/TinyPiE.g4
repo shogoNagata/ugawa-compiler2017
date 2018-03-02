@@ -36,5 +36,5 @@ MULOP: '*'|'/';
 UNARYOP: '~';
 
 IDENTIFIER: 'x'|'y'|'z';
-VALUE: [1-9][0-9]*;
+VALUE: [0-9]|[1-9][0-9]+;
 WS: [ \t\r\n] -> skip;
