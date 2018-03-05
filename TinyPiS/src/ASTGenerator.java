@@ -54,6 +54,7 @@ public class ASTGenerator {
 			ASTNode stmt = translate(ctx.stmt());
 			return new ASTWhileStmtNode(cond, stmt);
 		} else if (ctxx instanceof PrintStmtContext) {
+			System.out.println("check");
 			PrintStmtContext ctx = (PrintStmtContext) ctxx;
 			ASTNode expr = translate(ctx.expr());
 			return new ASTPrintStmtNode(expr);
